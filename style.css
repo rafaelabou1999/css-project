@@ -435,7 +435,7 @@ main .mainH2 {
   .grid2 {
     padding-top: 5%;
     display: grid;
-    grid-template-columns: 600px;
+    grid-template-columns: 1fr;
   }
 
   .footer {
