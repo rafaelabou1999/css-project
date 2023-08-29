@@ -274,7 +274,7 @@ main .mainH2 {
   font-size: 1rem;
   background-color: var(--main-color);
   color: white;
-  width: 85%;
+  width: 100%;
   padding: 1% 0;
 }
 
@@ -284,7 +284,7 @@ main .mainH2 {
   }
 
   .header2 img {
-    margin-left: 8%;
+    margin-left: 11%;
   }
 
   .grid {
@@ -293,7 +293,17 @@ main .mainH2 {
     grid-template-columns: 100%;
     grid-row-gap: 10%;
   }
+  .textItem {
+    padding-left: 0%;
+    margin-right: 50%;
+    width: 110%;
+  }
 
+  main .mainH2 {
+    font-size: 1.5rem;
+    border-bottom: 3px solid var(--main-color);
+    width: 30%;
+  }
   .grid2 {
     grid-template-columns: 100%;
   }
@@ -303,6 +313,23 @@ main .mainH2 {
     width: 40%;
   }
 
+  .item2 {
+    width: 70%;
+  }
+
+  .item2:nth-of-type(1),
+  .item2:nth-of-type(3),
+  .item2:nth-of-type(5) {
+    padding-left: 10%;
+    border-right: none !important;
+  }
+
+  .item2 button {
+    width: 10% !important;
+    height: 3vh !important;
+    padding-top: 0.8%;
+    padding-left: 3%;
+  }
   .item2:nth-of-type(2),
   .item2:nth-of-type(4),
   .item2:nth-of-type(6) {
@@ -325,11 +352,23 @@ main .mainH2 {
     border-right: 1px solid var(--grey);
     border-bottom: 1px solid var(--grey);
   }
+
+  .footer {
+    font-size: 0.8rem;
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 700px) {
   .header1 {
     flex-direction: column;
+  }
+
+  .item2 button {
+    width: 12% !important;
+    height: 5vh !important;
+    padding-top: 1%;
+    padding-left: 3%;
   }
 
   .header2 {
@@ -440,5 +479,25 @@ main .mainH2 {
 
   .footer {
     font-size: 0.7rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .text p {
+    width: 150%;
+  }
+
+  .img {
+    display: flex;
+    align-items: center;
+  }
+
+  .moreGrid h2 {
+    padding-top: -25%;
+    width: 60%;
+  }
+  .footer {
+    width: 95%;
   }
 }
